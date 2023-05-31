@@ -1,6 +1,6 @@
 import Storage from "@/apis/storage";
 import { AxiosRequestConfig, AxiosResponse } from "axios";
-import refreshToken from "../token/refreshToken";
+import refreshToken from "@/apis/token/refreshToken";
 import exception from "@/utils/constants/exception.constants";
 
 export const requestInterceptors = (requestConfig: AxiosRequestConfig) => {
