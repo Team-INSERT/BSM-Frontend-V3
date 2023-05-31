@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const HomePage = () => {
-  return <Container></Container>;
+  return <Container />;
 };
 
 const Container = styled.div`

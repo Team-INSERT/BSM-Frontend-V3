@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "🚦 PREPARE-COMMIT-MSG | Start cz with cz-customizable..."
-exec < /dev/tty && yarn cz --hook || true
+exec < /dev/tty && yarn lint && yarn cz --hook || true 

@@ -10,7 +10,6 @@ const refreshToken = async () => {
     ).data;
     Storage.setItem("access_token", res.accessToken);
   } catch (err) {
-    console.log(err);
     Storage.delItem("refresh_token");
   }
 };
