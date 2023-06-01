@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import React, { PropsWithChildren } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ToastContainer, toast } from "react-toastify";
@@ -32,7 +33,11 @@ const Provider = ({ children }: PropsWithChildren) => {
           position={toast.POSITION.TOP_RIGHT}
         />
         <Header />
-        <React.Fragment>{children}</React.Fragment>
+        <React.Fragment>
+          {children}
+          <div style={{ height: "1000px" }}>dd</div>
+        </React.Fragment>
+        <Footer />
       </RecoilRoot>
     </QueryClientProvider>
   );
