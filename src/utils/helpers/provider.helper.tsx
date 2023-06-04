@@ -24,6 +24,10 @@ const CustomToastContainer = styled(ToastContainer)`
   }
 `;
 
+const TestGap = styled.div`
+  height: 500px;
+`;
+
 const Provider = ({ children }: PropsWithChildren) => {
   return (
     <QueryClientProvider client={queryClient}>
@@ -35,7 +39,7 @@ const Provider = ({ children }: PropsWithChildren) => {
         <Header />
         <React.Fragment>
           {children}
-          <div style={{ height: "1000px" }}>dd</div>
+          <TestGap />
         </React.Fragment>
         <Footer />
       </RecoilRoot>

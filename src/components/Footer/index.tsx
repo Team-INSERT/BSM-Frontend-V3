@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import color from "@/styles/color";
 import Info from "./Info";
 
 const Footer = () => {
@@ -16,12 +17,11 @@ const Layout = styled.div`
   width: 100vw;
   height: 400px;
   bottom: 0;
-  color: #d9d9d9;
+  color: ${color.footerContent};
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #303441;
-  border-bottom: 1px solid #e6e6e6;
+  background-color: ${color.footerBackground};
 `;
 
 const Container = styled.div`
