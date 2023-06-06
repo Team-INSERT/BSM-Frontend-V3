@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-export interface FlexPropsType {
+interface FlexPropsType {
   children: ReactNode;
-  gap?: string;
+  gap: string;
   justifyContent?:
     | "none"
     | "center"
@@ -13,3 +13,5 @@ export interface FlexPropsType {
   width?: string;
   height?: string;
 }
+
+export default FlexPropsType;

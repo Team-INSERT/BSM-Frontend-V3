@@ -95,7 +95,6 @@ export class HttpClient {
     this.api.interceptors.response.use(
       (response) => response,
       (error) => {
-        console.log(error);
         // const { status, code } = error.response.data
         // if (status === 403 && code === exception.code.TOKEN_403_3) Storage.delItem('refresh_token')
         Storage.delItem("access_token");
@@ -124,7 +123,7 @@ export class HttpClient {
   }
 }
 
-const axiosConfig: HttpClientConfig = {
+export const axiosConfig: HttpClientConfig = {
   baseURL: "https://buma.wiki/",
   timeout: 10000,
 };

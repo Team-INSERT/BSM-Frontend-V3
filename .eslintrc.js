@@ -31,15 +31,15 @@ module.exports = {
     "react/jsx-props-no-spreading": 0,
     "no-empty-interface": 0,
     "import/prefer-default-export": "off",
+    "react/function-component-definition": [
+      2,
+      { namedComponents: ["arrow-function", "function-declaration"] },
+    ],
     "jsx-a11y/label-has-associated-control": [
       2,
       {
         labelAttributes: ["htmlFor"],
       },
-    ],
-    "react/function-component-definition": [
-      2,
-      { namedComponents: ["arrow-function", "function-declaration"] },
     ],
     "react/no-array-index-key": 0,
     "consistent-return": 0,

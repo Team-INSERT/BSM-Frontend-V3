@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexPropsType } from "./type";
+import FlexPropsType from "./type";
 
 const Column = ({
   children,
@@ -16,9 +16,9 @@ const Column = ({
   );
 };
 
+export default Column;
+
 const StyledColumn = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
-export default Column;

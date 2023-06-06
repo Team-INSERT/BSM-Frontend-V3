@@ -28,6 +28,7 @@ const NavigationWrap = styled.ul`
 const NavigationItem = styled.li`
   font-size: 18px;
   color: black;
+  cursor: pointer;
 `;
 
 export default Navigation;
