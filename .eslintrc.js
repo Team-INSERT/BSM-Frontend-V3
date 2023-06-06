@@ -37,6 +37,10 @@ module.exports = {
         labelAttributes: ["htmlFor"],
       },
     ],
+    "react/function-component-definition": [
+      2,
+      { namedComponents: ["arrow-function", "function-declaration"] },
+    ],
     "react/no-array-index-key": 0,
     "consistent-return": 0,
   },

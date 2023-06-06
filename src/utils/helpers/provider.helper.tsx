@@ -37,10 +37,8 @@ const Provider = ({ children }: PropsWithChildren) => {
           position={toast.POSITION.TOP_RIGHT}
         />
         <Header />
-        <React.Fragment>
-          {children}
-          <TestGap />
-        </React.Fragment>
+        {children}
+        <TestGap />
         <Footer />
       </RecoilRoot>
     </QueryClientProvider>
