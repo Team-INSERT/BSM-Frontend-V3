@@ -11,6 +11,7 @@ const color = {
 
   tertiary: "#303441",
   container: "#F9FAFF",
+  content: "#D9D9D9",
 };
 
 export default color;
