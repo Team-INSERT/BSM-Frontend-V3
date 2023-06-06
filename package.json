@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && next build"
   },
   "dependencies": {
     "@playwright/test": "^1.29.1",

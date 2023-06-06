@@ -8,9 +8,10 @@ import Row from "../Flex/Row";
 import QR from "./images/QR.png";
 
 const Info = () => {
-  const content = {
+  const { name, service, headline, serviceInfo, policy, inquery, copyRight } = {
     name: "BSM",
     service: "부산소마고 학생 정보 관리 시스템",
+    headline: "이용약관 | 개인정보처리방침",
     serviceInfo: `부산소마고학생정보관리시스템 | 대표 : 이현준 | 부산광역시 강서구 가락대로 1393`,
     policy: "개인정보책임관리자 : 김호현 | 소개 사이트 : insert.com",
     inquery: "비즈니스 문의 : insert@gmail.com",
@@ -19,19 +20,19 @@ const Info = () => {
 
   return (
     <>
-      <Service>{content.name}</Service>
-      <ServiceInfo>{content.service}</ServiceInfo>
-      <Policy>이용약관 | 개인정보처리방침</Policy>
+      <Service>{name}</Service>
+      <ServiceInfo>{service}</ServiceInfo>
+      <Policy>{headline}</Policy>
       <Line />
       <Row>
         <Column gap="2px">
-          <Policy>{content.service}</Policy>
-          <Policy>{content.serviceInfo}</Policy>
-          <Policy>{content.policy}</Policy>
-          <Policy>{content.inquery}</Policy>
-          <Copyright>{content.copyRight}</Copyright>
+          <Policy>{service}</Policy>
+          <Policy>{serviceInfo}</Policy>
+          <Policy>{policy}</Policy>
+          <Policy>{inquery}</Policy>
+          <Copyright>{copyRight}</Copyright>
         </Column>
-        <QRCode src={QR} alt="qr" />
+        <QRCode src={QR} alt="QRCODE" />
       </Row>
     </>
   );
@@ -63,7 +64,7 @@ const Line = styled.div`
   width: 100%;
   height: 0.5px;
   margin: 2% 0;
-  background-color: ${color.footerContent};
+  background-color: ${color.content};
 `;
 
 const QRCode = styled(Image)`
