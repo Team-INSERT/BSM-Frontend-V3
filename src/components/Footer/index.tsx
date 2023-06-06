@@ -17,11 +17,11 @@ const Layout = styled.div`
   width: 100vw;
   height: 400px;
   bottom: 0;
-  color: ${color.footerContent};
+  color: ${color.content};
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${color.footerBackground};
+  background-color: ${color.tertiary};
 `;
 
 const Container = styled.div`
