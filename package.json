@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next lint && next build",
     "start": "next start",
-    "lint": "next lint && next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@playwright/test": "^1.29.1",
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@playwright/test": "^1.34.3",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
